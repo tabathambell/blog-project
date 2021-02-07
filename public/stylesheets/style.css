@@ -49,6 +49,10 @@
     margin: 0;
     padding: 0;
   }
+
+  .card {
+    border-width: 2px;
+  }
   
   textarea, input {
     padding: .5%;
@@ -134,7 +138,7 @@
   .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: white;
   }
   
   .edit-link {
