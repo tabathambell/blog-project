@@ -216,6 +216,10 @@
     word-wrap: break-word;
     word-break: break-all;
   }
+
+  #edit-box {
+    font-family:Arial, Helvetica, sans-serif;
+  }
   
   footer {
     border-top: 1px solid black;
