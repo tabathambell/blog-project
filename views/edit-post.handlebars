@@ -5,8 +5,8 @@
   </h2>
   <form class="edit-post-form">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <input name="post-content" type="text" value="{{post.post_content}}" />
+      <div class="edit-title"><input name="post-title" type="text" value="{{post.title}}" /></div>
+      <div class="edit-content"><input name="post-content" type="text" value="{{post.post_content}}" /></div>
     </div>
     <div>  |
       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>

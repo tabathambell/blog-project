@@ -14,14 +14,20 @@
       <h1>
         <a href="/">The Tech Blog</a>
       </h1>
-      <nav class="navigation">
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn">logout</button>
-        {{else}}
-        <a href="/">home</a>
-        <a href="/login">login</a>
-        {{/if}}
+      <nav>
+        <ul>
+          {{#if loggedIn}}
+          <li>
+            <a href="/dashboard">dashboard</a>
+          </li>
+          <li>
+            <button id="logout" class="btn">logout</button>
+          </li>
+          {{else}}
+          <li><a href="/">home</a></li>
+          <li><a href="/login">login</a></li>
+          {{/if}}
+        </ul>
       </nav>
     </header>
     <main>
@@ -31,7 +37,7 @@
       This blog was coded by Tabatha Bell using MVC paradigm and Handlebars.js
     </footer>
   </div>
-  
+
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}

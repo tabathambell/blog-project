@@ -29,20 +29,36 @@
     border: 2px;
     border-color: black;
   }
+
+  .hero nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+  }
+
+  .hero nav ul {
+    list-style-type: none;
+  }
+
+  .hero nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+  }
   
   button {
-    background-color: #5d256e;
+    background-color: darkgray;
     border: 0;
     padding: 1%;
-    color: white;
+    color: #5d256e;
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
-    border-radius: 5px;
+    font-size: 20px;
   }
   
   button:hover {
-    background-color: #991dbe;
+    background-color: darkgray;
   }
   
   .post-list {
@@ -51,7 +67,23 @@
   }
 
   .card {
-    border-width: 2px;
+    margin: 0 0 10px 0;
+    border: 2px solid darkgray;
+    padding: 2%;
+  }
+
+  .card-title a {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .card-content {
+    padding: 15px;
+    color: black;
+  }
+
+  .card-meta {
+
   }
   
   textarea, input {
@@ -147,6 +179,7 @@
   }
   
   .comment-form {
+    margin-top: 5%;
     margin-bottom: 5%;
   }
   
@@ -167,10 +200,25 @@
   
   .new-post-form input {
     width: 300px;
+    margin-bottom: 5%;
   }
   
   .edit-post-form {
     margin-bottom: 5%;
+  }
+
+  .edit-title input {
+    margin-bottom: 2%;
+    width: 450px;
+    font-size: 16px;
+  }
+
+  .edit-content input {
+    width: 450px;
+    height: 250px;
+    font-size: 14px;
+    word-wrap: break-word;
+    word-break: break-all;
   }
   
   footer {
